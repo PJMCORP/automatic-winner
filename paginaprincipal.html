@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras y cuerpos geométricos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FAF9EE;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .contenedor-portada {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            max-width: 900px;
+            width: 100%;
+            user-select: none;
+        }
+
+        .titulo-seccion {
+            font-size: 64px;
+            font-weight: 400;
+            letter-spacing: 12px;
+            color: #000000;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+
+        .conector-y {
+            font-size: 48px;
+            font-weight: 400;
+            color: #000000;
+            margin: 20px 0;
+        }
+
+        .subtitulo-seccion {
+            font-size: 54px;
+            font-weight: 400;
+            letter-spacing: 10px;
+            color: #000000;
+            margin: 10px 0 0 0;
+            text-transform: uppercase;
+            padding-left: 40px; 
+        }
+
+        .zona-figuras {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin: 30px 0;
+            height: 150px;
+            width: 100%;
+        }
+
+        .triangulo {
+            width: 0;
+            height: 0;
+            border-left: 45px solid transparent;
+            border-right: 45px solid transparent;
+            border-bottom: 80px solid #FCD966;
+            transform: rotate(-15deg);
+        }
+
+        .cuadrado {
+            width: 85px;
+            height: 75px;
+            background-color: #40B5FF;
+            transform: rotate(8deg);
+        }
+
+        .circulo {
+            width: 80px;
+            height: 80px;
+            background-color: #FF3B30;
+            border-radius: 50%;
+        }
+
+        .rectangulo {
+            width: 140px;
+            height: 70px;
+            background-color: #81E261;
+            transform: rotate(-10deg);
+        }
+
+        .boton-comenzar {
+            display: inline-block;
+            margin-top: 60px;
+            padding: 15px 60px;
+            font-size: 28px;
+            letter-spacing: 6px;
+            color: #000000;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: #E2E1D4;
+            border: 3px dashed #000000;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            cursor: pointer;
+        }
+
+        .boton-comenzar:hover {
+            background-color: #D3D2C5;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <main class="contenedor-portada">
+        
+        <h1 class="titulo-seccion">Figuras</h1>
+        
+        <div class="zona-figuras">
+            <div class="triangulo"></div>
+            <div class="cuadrado"></div>
+            <div class="circulo"></div>
+            <div class="rectangulo"></div>
+        </div>
+
+        <div class="conector-y">Y</div>
+
+        <h2 class="subtitulo-seccion">Cuerpos<br>Geométricos</h2>
+
+        <a href="Pagina2.html" class="boton-comenzar">Comenzar</a>
+
+    </main>
+
+</body>
+</html>
